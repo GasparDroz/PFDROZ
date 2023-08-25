@@ -29,9 +29,344 @@
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
+    <!-- Comienzo Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html" tabindex="1">
+                    <img src="../assets/img/logo.svg" alt="GlobalPassTickets logo" class="logo d-inline-block align-text-center">
+                    GlobalPassTickets
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html" tabindex="2">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tickets.html" tabindex="3">
+                                Tickets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./puntos-de-venta.html" tabindex="4">
+                                Puntos de Venta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html" tabindex="5">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./ayuda.html" tabindex="6">
+                                Ayuda
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tickets.html">
+                            Tickets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./puntos-de-venta.html">
+                            Puntos de Venta
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre-nosotros.html">
+                            Sobre nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ayuda.html">
+                            Ayuda
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+    
     <main class="main">
+        <!-- Inicio Primera seccion -->
+        <section class="ayuda__banner-section--container">
+            <div class="ayuda__banner-section">
+                <span class="ayuda__banner-section__span">
+                    Centro de ayuda
+                </span>
+                <h1 class="ayuda__banner-section__title">
+                    ¿Cómo podemos ayudarte?
+                </h1>
+                <p class="ayuda__banner-section__description">
+                    Busca tu duda aquí o consúltanos tu inquietud
+                </p>
+                <!-- El boton lleva a la seccion de preguntas frecuentes -->
+                <a href="#preguntas" class="ayuda__banner-section__button" tabindex="7">
+                    Preguntas Frecuentes
+                </a>
+            </div>
+        </section>
+        <!-- Fin Primera seccion -->
 
+        <!-- Inicio Segunda seccion -->
+        <section class="ayuda__contact-section">
+            <h2 class="contact-section__title">
+                Formulario de Contacto
+            </h2>
+            <p class="contact-section__description">
+                Antes de contactarnos por favor revisa si tu duda no se encuentra en la sección de Preguntas Frecuentes
+            </p>
+            <form action="" class="contact-section__form">
+                <label for="name" class="contact-section__form-label">
+                    Nombre completo:
+                </label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su Nombre Completo" required tabindex="8" class="contact-section__form-input">
+
+                <label for="email" class="contact-section__form-label">
+                    Correo electrónico:
+                </label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su Correo electrónico" required tabindex="9" class="contact-section__form-input">
+
+                <label for="tel" class="contact-section__form-label">
+                    Nro de teléfono (OPCIONAL):
+                </label>
+                <input type="tel" id="tel" name="telefono" placeholder="Ingrese su número de teléfono" tabindex="10" class="contact-section__form-input">
+
+                <label for="motivo" class="contact-section__form-label">
+                    Motivo de la consulta:
+                </label>
+                <div class="contact-section__form__select-container">
+                    <select id="name" name="name" placeholder="Ingrese su Correo electrónico" required tabindex="11" class="contact-section__form__input contact-section__form__select">
+                        <option selected disabled>
+                            Seleccione su motivo
+                        </option>
+                        <option value="">
+                            Consulta sobre Eventos
+                        </option>
+                        <option value="">
+                            Problema con la Compra de Entradas
+                        </option>
+                        <option value="">
+                            Asistencia Técnica y Plataforma
+                        </option>
+                    </select>
+                    <div class="contact-section__form__select-icon-container">
+                        <i class="contact-section__form__select__icon fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+                
+                <label for="textarea" class="contact-section__form-label">
+                    Explicanos tu problema:
+                </label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Introduzca el motivo de su consulta" required class="contact-section__form-input contact-section__form-textarea" tabindex="12"></textarea>
+
+                <button type="submit" class="contact-section__form-button" tabindex="13">
+                    Enviar
+                </button>
+            </form>
+        </section>
+        <!-- Fin Segunda seccion -->
+
+        <!-- Inicio Tercer seccion -->
+        <section class="ayuda__preguntas-section--container" id="preguntas">
+            <div class="container preguntas-section">
+                <h3 class="text-center preguntas-section__title">
+                    Preguntas Frecuentes
+                </h3>
+                <div class="border accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" tabindex="14">
+                                ¿Cómo puedo comprar entradas?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Haz clic en el evento deseado y sigue el proceso de compra
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" tabindex="15">
+                                ¿Cómo puedo obtener mi ticket digital?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Recibirás tu ticket por correo electrónico después de la compra
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" tabindex="16">
+                                ¿Puedo cambiar la fecha o lugar del evento?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Los cambios están sujetos a la política del organizador del evento
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" tabindex="16">
+                                ¿Cuál es el proceso de reembolso?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Solicita un reembolso a través de nuestro centro de ayuda
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" tabindex="16">
+                                ¿Dónde puedo ver mis entradas compradas?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Accede a 'Mi cuenta' y selecciona 'Mis entradas' para verlas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Tercer seccion -->
+
+        <!-- Inicio Cuarta seccion -->
+        <section class="ayuda__cards-section--container">
+            <div class="container cards-section">
+                <div class="row cards-section__row">
+                    <div class="border col-lg cards-section__card">
+                        <i class="fa-solid fa-print fa-2x"></i>
+                        <h3 class="cards-section__card-title">
+                            ¿Cómo puedo imprimir mis entradas?
+                        </h3>
+                        <p>
+                            Para imprimir tus entradas, abre el archivo PDF que recibiste por correo y selecciona la opción de impresión.
+                        </p>
+                    </div>
+                    <div class="border col-lg cards-section__card">
+                        <i class="fa-solid fa-money-bill-wave fa-2x"></i>
+                        <h3 class="cards-section__card-title">
+                            ¿Hay reembolso si el evento se cancela?
+                        </h3>
+                        <p>
+                            Las políticas de reembolso varían según el evento. Contáctanos para obtener detalles sobre la cancelación y el reembolso.
+                        </p>
+                    </div>
+                </div>
+                <div class="row cards-section__row
+                cards-section__second-row">
+                    <div class="border col-lg cards-section__card">
+                        <i class="fa-solid fa-percent fa-2x"></i>
+                        <h3 class="cards-section__card-title">
+                            ¿Cómo canjear códigos de descuento?
+                        </h3>
+                        <p>
+                            Ingresa el código durante el proceso de compra, verás el descuento aplicado antes de finalizar.
+                        </p>
+                    </div>
+                    <div class="border col-lg cards-section__card">
+                        <i class="fa-solid fa-credit-card fa-2x"></i>
+                        <h3 class="cards-section__card-title">
+                            ¿Qué formas de pago aceptan?
+                        </h3>
+                        <p>
+                            Aceptamos tarjetas de crédito y débito Visa, Mastercard, American Express y PayPal para tus compras seguras.
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!-- Fin Cuarta seccion -->
     </main>
+    <!-- Inicio Footer -->
+    <footer class="footer">
+        <div class="footer__group--one">
+            <div class="footer__box">
+                <div class="footer__box__logo">
+                    <a href="#">
+                        <img src="../assets/img/logo.svg" alt="GlobalPassTickets logo">
+                        GlobalPassTickets
+                    </a>
+                </div>
+            </div>
+            <div class="footer__box">
+                <h2 class="footer__box--title">
+                    Una web de Gaspar Droz
+                </h2>
+                <ul class="footer__social-list">
+                    <!-- Icono Github -->
+                    <li class="footer__social-item">
+                        <a href="https://github.com" target="_blank" class="footer__social-list__icon" tabindex="17">
+                            <i class="fa-brands fa-github
+                            fa-2x"></i>
+                        </a>
+                    </li>
+                    <!-- Icono Instagram -->
+                    <li class="footer__social-item">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-list__icon" tabindex="18">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        </a> 
+                    </li>
+                    <!-- Icono Twitter -->
+                    <li class="footer__list-item">
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-list__icon" tabindex="19">
+                            <i class="fa-brands fa-square-twitter
+                            fa-2x"></i>
+                        </a>
+                    </li>    
+                    <!-- Icono Linkedin -->
+                    <li class="footer__social-item">
+                        <a href="https://www.linkedin.com/" target="_blank" class="footer__social-list__icon" tabindex="20">
+                            <i class="fa-brands fa-linkedin
+                            fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__group--two">
+            <p class="footer__copy">
+                &copy; 2023 GlobalPassTickets
+            </p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+    
     <!-- Linkeo arhivo js de la libreria de animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

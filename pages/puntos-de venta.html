@@ -29,9 +29,230 @@
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
+    <!-- Comienzo Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html" tabindex="1">
+                    <img src="../assets/img/logo.svg" alt="GlobalPassTickets logo" class="logo d-inline-block align-text-center">
+                    GlobalPassTickets
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html" tabindex="2">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tickets.html" tabindex="3">
+                                Tickets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./puntos-de-venta.html" tabindex="4">
+                                Puntos de Venta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html" tabindex="5">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ayuda.html" tabindex="6">
+                                Ayuda
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tickets.html">
+                            Tickets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./puntos-de-venta.html">
+                            Puntos de Venta
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre-nosotros.html">
+                            Sobre nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ayuda.html">
+                            Ayuda
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+    
     <main class="main">
-        
+        <!-- Inicio primera seccion -->
+        <section class="puntos-de-venta__banner-section--container">
+            <div class="puntos-de-venta__banner-section container">
+                <h1 class="puntos-de-venta__banner-section__title">
+                    Puntos de venta
+                </h>
+                <p class="puntos-de-venta__banner-section__description">
+                    Conoce los puntos de ubicacion de nuestras sucursales en donde podes conseguir tus tickets
+                </p>
+                <div class="puntos-de-venta__banner-section__scroll-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- Fin primera seccion-->
+
+        <!-- Inicio segunda seccion -->
+        <section class="puntos-de-venta__boleterias-section" id="events">
+            <article class="boleterias-section__ubication" tabindex="7" data-aos="flip-down" data-aos-duration="500">
+                <iframe class="boleterias-section__ubication-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4477238119566!2d-58.449181823878654!3d-34.59283835692442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5791168b481%3A0x646abc85144e9474!2sBoleter%C3%ADa%20Movistar%20Arena!5e0!3m2!1ses!2sar!4v1691693466733!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="boleterias-section__ubication-text">
+                    <h3 class="boleterias-section__ubication-text--title">
+                        Boleteria Movistar Arena
+                    </h3>
+                    <p>
+                        Buenos Aires, Argentina
+                    </p>
+                </div>  
+            </article>
+
+            <article class="boleterias-section__ubication" tabindex="8" data-aos="flip-down" data-aos-duration="500">
+                <iframe class="boleterias-section__ubication-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.781028822905!2d-58.524567923876816!3d-34.634973459150224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9cf7ce79577%3A0x5c724bd30946900e!2sBoleter%C3%ADas%20%C3%81lvarez%20Jonte!5e0!3m2!1ses!2sar!4v1691773152332!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="boleterias-section__ubication-text">
+                    <h3 class="boleterias-section__ubication-text--title">
+                        Boleteria Alvarez Jonte
+                    </h3>
+                    <p>
+                        Buenos Aires, Argentina
+                    </p>
+                </div>  
+            </article>
+
+            <article class="boleterias-section__ubication" tabindex="9" data-aos="flip-down" data-aos-duration="500">
+                <iframe class="boleterias-section__ubication-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.3393956427217!2d-66.07923391794174!3d18.422893027438974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0368c1c1124a6d%3A0x38e1df67a8b342f9!2sTicket%20Center%20PR!5e0!3m2!1ses!2sar!4v1691776229312!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="boleterias-section__ubication-text">
+                    <h3 class="boleterias-section__ubication-text--title">
+                        Ticket Center PR
+                    </h3>
+                    <p>
+                        San Juan, Puerto Rico
+                    </p>
+                </div>  
+            </article>
+
+            <article class="boleterias-section__ubication" tabindex="10" data-aos="flip-down" data-aos-duration="500">
+                <iframe class="boleterias-section__ubication-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.736558344698!2d2.195060176123871!3d41.401527195118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f0b3864dd1%3A0x470c7e0e4ffb61aa!2sTicketmaster!5e0!3m2!1ses!2sar!4v1691776514001!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="boleterias-section__ubication-text">
+                    <h3 class="boleterias-section__ubication-text--title">
+                        Ticketmaster
+                    </h3>
+                    <p>
+                        Barcelona, España
+                    </p>
+                </div>  
+            </article>
+
+            <article class="boleterias-section__ubication" tabindex="11" data-aos="flip-down" data-aos-duration="500">
+                <iframe class="boleterias-section__ubication-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0069363973985!2d-122.39735592402853!3d37.78987721128975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064bbacf439%3A0xfc7d963692815360!2sStubHub!5e0!3m2!1ses!2sar!4v1691776693864!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="boleterias-section__ubication-text">
+                    <h3 class="boleterias-section__ubication-text--title">
+                        Ticketstub
+                    </h3>
+                    <p>
+                        San Francisco, Estados Unidos
+                    </p>
+                </div>  
+            </article>
+
+            <article class="boleterias-section__ubication" tabindex="12" data-aos="flip-down" data-aos-duration="500">
+                <iframe class="boleterias-section__ubication-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19998.13803524789!2d-121.99581026677367!3d51.20494019976251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69293415507cace3%3A0xcbe886b31871eda!2sTickets%20International!5e0!3m2!1ses!2sar!4v1691775739116!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="boleterias-section__ubication-text">
+                    <h3 class="boleterias-section__ubication-text--title">
+                        Tickets international
+                    </h3>
+                    <p>
+                        Vancouver, Estados Unidos
+                    </p>
+                </div>  
+            </article>
+        </section>
+        <!-- Fin segunda seccion -->
     </main>
+    <!-- Inicio Footer -->
+    <footer class="footer">
+        <div class="footer__group--one">
+            <div class="footer__box">
+                <div class="footer__box__logo">
+                    <a href="#">
+                        <img src="../assets/img/logo.svg" alt="GlobalPassTickets logo">
+                        GlobalPassTickets
+                    </a>
+                </div>
+            </div>
+            <div class="footer__box">
+                <h2 class="footer__box--title">
+                    Una web de Gaspar Droz
+                </h2>
+                <ul class="footer__social-list">
+                    <!-- Icono Github -->
+                    <li class="footer__social-item">
+                        <a href="https://github.com" target="_blank" class="footer__social-list__icon" tabindex="13">
+                            <i class="fa-brands fa-github
+                            fa-2x"></i>
+                        </a>
+                    </li>
+                    <!-- Icono Instagram -->
+                    <li class="footer__social-item">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-list__icon" tabindex="14">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        </a> 
+                    </li>
+                    <!-- Icono Twitter -->
+                    <li class="footer__list-item">
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-list__icon" tabindex="15">
+                            <i class="fa-brands fa-square-twitter
+                            fa-2x"></i>
+                        </a>
+                    </li>    
+                    <!-- Icono Linkedin -->
+                    <li class="footer__social-item">
+                        <a href="https://www.linkedin.com/" target="_blank" class="footer__social-list__icon" tabindex="16">
+                            <i class="fa-brands fa-linkedin
+                            fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__group--two">
+            <p class="footer__copy">
+                &copy; 2023 GlobalPassTickets
+            </p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
     <!-- Linkeo arhivo js de la libreria de animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

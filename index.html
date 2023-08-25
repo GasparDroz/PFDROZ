@@ -29,9 +29,213 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <main class="main">
+    <!-- Comienzo Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html" tabindex="1">
+                    <img src="./assets/img/logo.svg" alt="GlobalPassTickets logo" class="logo d-inline-block align-text-center">
+                    GlobalPassTickets
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html" tabindex="2">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav-link" href="./pages/tickets.html" tabindex="3">
+                                Tickets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/puntos-de-venta.html" tabindex="4">
+                                Puntos de Venta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html" tabindex="5">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/ayuda.html" tabindex="6">
+                                Ayuda
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/tickets.html">
+                            Tickets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/puntos-de-venta.html">
+                            Puntos de Venta
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobre-nosotros.html">
+                            Sobre nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/ayuda.html">
+                            Ayuda
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
 
+    <main class="main">
+        <!-- Inicio primera seccion -->
+        <section class="inicio__banner-section--container">
+            <div class="inicio__banner-section container">
+                <h1 class="inicio__banner-section__title">
+                    Explora un Mundo de Eventos en Vivo
+                </h1>
+                <p class="inicio__banner-section__description">
+                    Descubre emocionantes conciertos, festivales y espectáculos. Reserva tus entradas y vive experiencias inolvidables
+                </p>
+                <a href="./pages/tickets.html" class="inicio__banner-section__button" tabindex="7">
+                    Consigue tus tickets ya
+                </a>
+                <div class="inicio__banner-section__scroll-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- Fin primera section-->
+
+        <!-- Inicio segunda seccion -->
+        <section class="inicio__cards-section container-fluid">
+            <div class="inicio__cards-section__card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="inicio__cards-section__card-one--img"></div>
+                <h2 class="inicio__cards-section__card-title">
+                    Conoce los siguientes eventos
+                </h2>
+                <p class="inicio__cards-section__card-description">     
+                    Los mejores festivales y eventos se experimentan con GlobalPassTickets. Dirígete a la sección "Tickets" y entérate primero de los próximos eventos antes de que te quedes sin tu entrada.
+                </p>
+                <a href="./pages/tickets.html" class="inicio__cards-section__card-button" tabindex="8">
+                    Ver eventos
+                </a>
+            </div>
+
+            <div class="inicio__cards-section__card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="inicio__cards-section__card-two--img"></div>
+                <h2 class="inicio__cards-section__card-title">
+                    Donde compro mis tickets
+                </h2>
+                <p class="inicio__cards-section__card-description">
+                    Puedes adquirir tus entradas de manera fácil y rápida en nuestro sitio web. Sin embargo, si deseas ser uno de los primeros en asegurar tu entrada, te recomendamos visitar nuestras taquillas.
+                </p>
+                <a href="./pages/puntos-de-venta.html" class="inicio__cards-section__card-button" tabindex="9">
+                    Encuentra Boletos
+                </a>
+            </div>
+
+            <div class="inicio__cards-section__card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="inicio__cards-section__card-three--img"></div>
+                <h2 class="inicio__cards-section__card-title">
+                    Quienes somos
+                </h2>
+                <p class="inicio__cards-section__card-description">  
+                    Descubre quiénes somos, nuestros valores y nuestra pasión por los eventos en vivo en la sección "Sobre Nosotros". Aprende sobre nuestro compromiso y los valores que hacen que cada experiencia sea inolvidable.
+                </p>
+                <a href="./pages/sobre-nosotros.html" class="inicio__cards-section__card-button" tabindex="10">
+                    Conócenos más
+                </a>
+            </div>
+
+            <div class="inicio__cards-section__card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="inicio__cards-section__card-four--img"></div>
+                <h2 class="inicio__cards-section__card-title">
+                    Tienes dudas?
+                </h2>
+                <p class="inicio__cards-section__card-description">
+                    Dirígete a la sección correspondiente para verificar si encuentras la respuesta a tu duda. En caso contrario, puedes completar formulario para enviar tu consulta, y nuestro equipo de soporte se pondrá en contacto contigo
+                </p>
+                <a href="./pages/ayuda.html" class="inicio__cards-section__card-button" tabindex="11">
+                    Obtener Ayuda
+                </a>
+            </div>
+        </section>
+        <!-- Fin segunda seccion -->
     </main>
+    <!-- Inicio Footer -->
+    <footer class="footer">
+        <div class="footer__group--one">
+            <div class="footer__box">
+                <div class="footer__box__logo">
+                    <a href="#">
+                        <img src="./assets/img/logo.svg" alt="GlobalPassTickets logo">
+                        GlobalPassTickets
+                    </a>
+                </div>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__box--title">
+                    Una web de Gaspar Droz
+                </h3>
+                <ul class="footer__social-list">
+                    <!-- Icono Github -->
+                    <li class="footer__social-item">
+                        <a href="https://github.com" target="_blank" class="footer__social-list__icon" tabindex="12">
+                            <i class="fa-brands fa-github
+                            fa-2x"></i>
+                        </a>
+                    </li>
+                    <!-- Icono Instagram -->
+                    <li class="footer__social-item">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-list__icon" tabindex="13">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        </a> 
+                    </li>
+                    <!-- Icono Twitter -->
+                    <li class="footer__list-item">
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-list__icon" tabindex="14">
+                            <i class="fa-brands fa-square-twitter
+                            fa-2x"></i>
+                        </a>
+                    </li>    
+                    <!-- Icono Linkedin -->
+                    <li class="footer__social-item">
+                        <a href="https://www.linkedin.com/" target="_blank" class="footer__social-list__icon" tabindex="15">
+                            <i class="fa-brands fa-linkedin
+                            fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__group--two">
+            <p class="footer__copy">
+                &copy; 2023 GlobalPassTickets
+            </p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
 
     <!-- Linkeo arhivo js de la libreria de animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
