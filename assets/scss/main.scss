@@ -1,0 +1,14 @@
+@import './base/reset';
+
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/funciones';
+
+@import './components/header';
+@import './components/footer';
+
+@import './views/inicio';
+@import './views/tickets';
+@import './views/puntos-de-venta';
+@import './views/sobre-nosotros';
+@import './views/ayuda';
