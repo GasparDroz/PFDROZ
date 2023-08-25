@@ -29,7 +29,7 @@
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
-    padding: 15px;
+    padding: $space-sm;
     max-width: 250px;
     color: $primary-color;
     background-color: $secondary-color;
@@ -57,9 +57,9 @@
     position: relative;
     @include flex-center;
     flex-direction: column;
-    gap: 50px;
+    gap: $space-2xl;
     @include mobile {
-        gap: 20px;
+        gap: $space-md;
     }
 }
 @mixin banner-title__styles {
@@ -75,7 +75,7 @@
     border-radius: 10px;
     min-height: 200px;
     font-weight: bold;
-    padding: 20px;
+    padding: $space-md;
     position: relative;
     overflow: hidden;
     background-position: top;
@@ -98,7 +98,7 @@
         border-bottom: 5px solid $primary-color;
         border-right: 5px solid $primary-color;
         transform: rotate(45deg);
-        margin: 6px;
+        margin: $space-xxs;
         animation: scroll 2s infinite;
         &:nth-child(2) {
             animation-delay: -.2s;

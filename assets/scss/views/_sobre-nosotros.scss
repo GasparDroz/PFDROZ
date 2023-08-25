@@ -29,17 +29,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 70px 80px;
+    gap: $space-xxs;
+    padding: $space-3xl $space-4xl;
     text-align: center;
     @include mobile {
-        padding: 70px 15px;
+        padding: $space-3xl $space-sm;
     }
 }
 %sobre-nosotros__cards-container {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: $space-xl;
     justify-content: center;
     @include tablet {
         flex-wrap: wrap;
@@ -52,8 +52,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 10px 20px;
+    gap: $space-xxs;
+    padding: $space-xxs $space-md;
     text-align: start;
     border: 1px solid $secondary-color;
     transition: 
@@ -76,7 +76,7 @@
     &__description {
         font-size: $font-size-md;
         font-weight: $font-bold;
-        padding-bottom: 20px;
+        padding-bottom: $space-md;
     }
     .beneficios-section__beneficios--container {
         @extend %sobre-nosotros__cards-container;
@@ -116,7 +116,7 @@
     &__description {
         font-size: $font-size-md;
         font-weight: $font-bold;
-        padding-bottom: 20px;
+        padding-bottom: $space-md;
     }
     .about-section__cards--container {
         @extend %sobre-nosotros__cards-container;

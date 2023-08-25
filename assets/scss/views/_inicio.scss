@@ -27,28 +27,25 @@
 
 /*Segunda seccion*/
 .inicio__cards-section {
-    padding: 50px;
+    padding: $space-2xl;
     @include flex-center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: $space-2xl;
     @include mobile {
-        padding: 50px 15px;
+        padding: $space-2xl $space-sm;
     }
     &__card {
         background-color: white;
         box-shadow: 0px 1px 30px 0px $secondary-color;
         width: 260px;
-        margin: 10px;
+        margin: $space-xs;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        padding-bottom: 15px;
-        &:hover {   
-            cursor: pointer;
-        }
+        padding-bottom: $space-sm;
         %inicio__card-img {
             height: 170px;
-            margin-bottom: 15px;
+            margin-bottom: $space-sm;
             background-size: cover;
         }
         &-one--img {
@@ -71,10 +68,10 @@
             color: $secondary-color;
             font-weight: $font-black;
             font-size: $font-size-md;
-            padding: 10px;
+            padding: $space-xs;
         }
         &-description {
-            padding: 10px;
+            padding: $space-xs;
         }
         &-button {
             @include button;

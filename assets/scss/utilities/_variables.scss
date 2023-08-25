@@ -1,11 +1,11 @@
-/*===== Colores =====*/
+/*=== Colores ===*/
 $primary-color: #fff;
 $secondary-color: #222;
 $secondary-color-lighter: rgba(177, 177, 177, 0.5);
 $complementary-color: #afa2ff;
 
 
-/*===== Tipografia =====*/
+/*=== Tipografia ===*/
 /*font-size*/
 $font-size-xs: 1rem;
 $font-size-sm: 1.25rem;
@@ -16,7 +16,7 @@ $font-size-2xl: 2.5rem;
 $font-size-3xl: 3rem;
 $font-size-4xl: 3.5rem;
 
-/*FONT WEIGHTS*/
+/*font-weight*/
 $font-thin: 100;
 $font-extralight: 200;
 $font-light: 300;
@@ -26,3 +26,14 @@ $font-semibold: 600;
 $font-bold: 700;
 $font-extrabold: 800;
 $font-black: 900;
+
+/*=== ESPACIADO ===*/
+$space-xxs: 0.5rem;
+$space-xs: 0.75rem;
+$space-sm: 1rem;
+$space-md: 1.25rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+$space-2xl: 3rem;
+$space-3xl: 4rem;
+$space-4xl: 5rem;

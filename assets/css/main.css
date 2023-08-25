@@ -549,10 +549,11 @@ progress {
   -webkit-appearance: none;
 }
 
-/*===== Colores =====*/
-/*===== Tipografia =====*/
+/*=== Colores ===*/
+/*=== Tipografia ===*/
 /*font-size*/
-/*FONT WEIGHTS*/
+/*font-weight*/
+/*=== ESPACIADO ===*/
 /* Pantallas
 (Al usar el @content cada vez que llamemos al mixin y escribamos algo dentro esto reemplazara al  @content*/
 /*Estilos por defecto para los botones*/
@@ -739,11 +740,11 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 @media screen and (max-width: 500px) {
   .inicio__banner-section--container .inicio__banner-section {
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 .inicio__banner-section--container .inicio__banner-section__title {
@@ -771,7 +772,7 @@ progress {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
-  padding: 15px;
+  padding: 1rem;
   max-width: 250px;
   color: #fff;
   background-color: #222;
@@ -795,7 +796,7 @@ progress {
   border-bottom: 5px solid #fff;
   border-right: 5px solid #fff;
   transform: rotate(45deg);
-  margin: 6px;
+  margin: 0.5rem;
   animation: scroll 2s infinite;
 }
 .inicio__banner-section--container .inicio__banner-section__scroll-animation span:nth-child(2) {
@@ -820,33 +821,30 @@ progress {
 
 /*Segunda seccion*/
 .inicio__cards-section {
-  padding: 50px;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 3rem;
 }
 @media screen and (max-width: 500px) {
   .inicio__cards-section {
-    padding: 50px 15px;
+    padding: 3rem 1rem;
   }
 }
 .inicio__cards-section__card {
   background-color: white;
   box-shadow: 0px 1px 30px 0px #222;
   width: 260px;
-  margin: 10px;
+  margin: 0.75rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
-}
-.inicio__cards-section__card:hover {
-  cursor: pointer;
+  padding-bottom: 1rem;
 }
 .inicio__cards-section__card .inicio__cards-section__card-four--img, .inicio__cards-section__card .inicio__cards-section__card-three--img, .inicio__cards-section__card .inicio__cards-section__card-two--img, .inicio__cards-section__card .inicio__cards-section__card-one--img {
   height: 170px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   background-size: cover;
 }
 .inicio__cards-section__card-one--img {
@@ -865,10 +863,10 @@ progress {
   color: #222;
   font-weight: 900;
   font-size: 1.5rem;
-  padding: 10px;
+  padding: 0.75rem;
 }
 .inicio__cards-section__card-description {
-  padding: 10px;
+  padding: 0.75rem;
 }
 .inicio__cards-section__card-button {
   border-radius: 5px;
@@ -876,7 +874,7 @@ progress {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
-  padding: 15px;
+  padding: 1rem;
   max-width: 250px;
   color: #fff;
   background-color: #222;
@@ -911,11 +909,11 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 @media screen and (max-width: 500px) {
   .tickets__banner-section--container .tickets__banner-section {
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 .tickets__banner-section--container .tickets__banner-section__title {
@@ -943,7 +941,7 @@ progress {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
-  padding: 15px;
+  padding: 1rem;
   max-width: 250px;
   color: #fff;
   background-color: #222;
@@ -967,7 +965,7 @@ progress {
   border-bottom: 5px solid #fff;
   border-right: 5px solid #fff;
   transform: rotate(45deg);
-  margin: 6px;
+  margin: 0.5rem;
   animation: scroll 2s infinite;
 }
 .tickets__banner-section--container .tickets__banner-section__scroll-animation span:nth-child(2) {
@@ -994,25 +992,25 @@ progress {
 .tickets__events-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 70px 80px;
+  gap: 1.25rem;
+  padding: 4rem 5rem;
 }
 @media screen and (max-width: 1000px) {
   .tickets__events-section {
     grid-template-columns: 1fr;
-    padding: 80px 60px;
+    padding: 5rem 4rem;
   }
 }
 @media screen and (max-width: 500px) {
   .tickets__events-section {
-    padding: 60px 20px;
+    padding: 4rem 1.25rem;
   }
 }
 .tickets__events-section .events-section__event-six, .tickets__events-section .events-section__event-five, .tickets__events-section .events-section__event-four, .tickets__events-section .events-section__event-three, .tickets__events-section .events-section__event-two, .tickets__events-section .events-section__event-one {
   border-radius: 10px;
   min-height: 200px;
   font-weight: bold;
-  padding: 20px;
+  padding: 1.25rem;
   position: relative;
   overflow: hidden;
   background-position: top;
@@ -1088,11 +1086,11 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 @media screen and (max-width: 500px) {
   .puntos-de-venta__banner-section--container .puntos-de-venta__banner-section {
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 .puntos-de-venta__banner-section--container .puntos-de-venta__banner-section__title {
@@ -1128,7 +1126,7 @@ progress {
   border-bottom: 5px solid #fff;
   border-right: 5px solid #fff;
   transform: rotate(45deg);
-  margin: 6px;
+  margin: 0.5rem;
   animation: scroll 2s infinite;
 }
 .puntos-de-venta__banner-section--container .puntos-de-venta__banner-section__scroll-animation span:nth-child(2) {
@@ -1155,32 +1153,32 @@ progress {
 .puntos-de-venta__boleterias-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 70px 80px;
+  gap: 1.25rem;
+  padding: 4rem 5rem;
 }
 @media screen and (max-width: 1000px) {
   .puntos-de-venta__boleterias-section {
     grid-template-columns: 1fr;
-    padding: 80px 60px;
+    padding: 5rem 4rem;
   }
 }
 @media screen and (max-width: 500px) {
   .puntos-de-venta__boleterias-section {
-    padding: 60px 20px;
+    padding: 4rem 1.25rem;
   }
 }
 .puntos-de-venta__boleterias-section .boleterias-section__ubication {
   border-radius: 10px;
   min-height: 200px;
   font-weight: bold;
-  padding: 20px;
+  padding: 1.25rem;
   position: relative;
   overflow: hidden;
   background-position: top;
   background-repeat: no-repeat;
   cursor: pointer;
   background-size: cover;
-  padding: 5px;
+  padding: 0.5rem;
   opacity: 1;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -1202,7 +1200,7 @@ progress {
 .puntos-de-venta__boleterias-section .boleterias-section__ubication-text {
   position: absolute;
   top: 0;
-  padding: 20px;
+  padding: 1.25rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1237,11 +1235,11 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 @media screen and (max-width: 500px) {
   .sobre-nosotros__banner-section--container .sobre-nosotros__banner-section {
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 .sobre-nosotros__banner-section--container .sobre-nosotros__banner-section__title {
@@ -1277,7 +1275,7 @@ progress {
   border-bottom: 5px solid #fff;
   border-right: 5px solid #fff;
   transform: rotate(45deg);
-  margin: 6px;
+  margin: 0.5rem;
   animation: scroll 2s infinite;
 }
 .sobre-nosotros__banner-section--container .sobre-nosotros__banner-section__scroll-animation span:nth-child(2) {
@@ -1304,20 +1302,20 @@ progress {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  padding: 70px 80px;
+  gap: 0.5rem;
+  padding: 4rem 5rem;
   text-align: center;
 }
 @media screen and (max-width: 500px) {
   .about-section, .beneficios-section {
-    padding: 70px 15px;
+    padding: 4rem 1rem;
   }
 }
 
 .about-section .about-section__cards--container, .beneficios-section .beneficios-section__beneficios--container {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 2rem;
   justify-content: center;
 }
 @media screen and (max-width: 1000px) {
@@ -1331,7 +1329,7 @@ progress {
   border-radius: 10px;
   min-height: 200px;
   font-weight: bold;
-  padding: 20px;
+  padding: 1.25rem;
   position: relative;
   overflow: hidden;
   background-position: top;
@@ -1342,8 +1340,8 @@ progress {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
   text-align: start;
   border: 1px solid #222;
   transition: transform 0.3s;
@@ -1364,7 +1362,7 @@ progress {
 .beneficios-section__description {
   font-size: 1.5rem;
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .beneficios-section .beneficios-section__beneficios--container .beneficios-section__beneficio:hover {
   transform: scale(0.96);
@@ -1393,7 +1391,7 @@ progress {
 .about-section__description {
   font-size: 1.5rem;
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .about-section .about-section__cards--container .about-section__card:hover {
   transform: scale(0.96);
@@ -1423,18 +1421,18 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
-  padding-left: 80px;
+  gap: 1.5rem;
+  padding-left: 5rem;
 }
 @media screen and (max-width: 500px) {
   .ayuda__banner-section--container .ayuda__banner-section {
-    padding: 25px 0;
-    padding-left: 20px;
+    padding: 1.5rem 0;
+    padding-left: 1.25rem;
   }
 }
 .ayuda__banner-section--container .ayuda__banner-section__span {
   text-align: center;
-  padding: 10px;
+  padding: 0.75rem;
   font-weight: 700;
   border-radius: 20px;
   background-color: #222;
@@ -1464,7 +1462,7 @@ progress {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
-  padding: 15px;
+  padding: 1rem;
   max-width: 250px;
   color: #fff;
   background-color: #222;
@@ -1487,16 +1485,16 @@ progress {
 
 /*Segunda seccion*/
 .ayuda__contact-section {
-  padding: 50px 0;
+  padding: 3rem 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 @media screen and (max-width: 800px) {
   .ayuda__contact-section {
-    padding: 50px 20px;
+    padding: 3rem 1.25rem;
   }
 }
 .ayuda__contact-section .contact-section__title {
@@ -1515,7 +1513,7 @@ progress {
   width: 100%;
   max-width: 750px;
   display: grid;
-  gap: 10px;
+  gap: 0.75rem;
 }
 .ayuda__contact-section .contact-section__form-input {
   width: 95%;
@@ -1528,7 +1526,7 @@ progress {
   outline: none;
 }
 .ayuda__contact-section .contact-section__form-label {
-  margin-top: 15px;
+  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -1548,7 +1546,7 @@ progress {
   box-shadow: none;
   background-image: none;
   width: 100%;
-  padding: 0 0.5em;
+  padding: 0.5rem;
   cursor: pointer;
   background-color: #afa2ff;
 }
@@ -1580,7 +1578,7 @@ progress {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
-  padding: 15px;
+  padding: 1rem;
   max-width: 250px;
   color: #fff;
   background-color: #222;
@@ -1604,7 +1602,7 @@ progress {
 }
 .ayuda__preguntas-section--container .preguntas-section {
   max-width: 700px;
-  padding: 50px 0;
+  padding: 3rem 0;
 }
 @media screen and (max-width: 800px) {
   .ayuda__preguntas-section--container .preguntas-section {
@@ -1614,7 +1612,7 @@ progress {
 .ayuda__preguntas-section--container .preguntas-section__title {
   font-weight: 900;
   font-size: 2rem;
-  padding-bottom: 25px;
+  padding-bottom: 1.5rem;
 }
 
 /*Cuarta seccion*/
@@ -1622,15 +1620,15 @@ progress {
   background-color: rgba(177, 177, 177, 0.5);
 }
 .ayuda__cards-section--container .cards-section {
-  padding: 50px;
+  padding: 3rem;
 }
 .ayuda__cards-section--container .cards-section__row {
-  gap: 25px;
+  gap: 1.5rem;
 }
 .ayuda__cards-section--container .cards-section__row .cards-section__card {
   overflow: hidden;
-  padding: 15px;
-  padding-left: 20px;
+  padding: 1rem;
+  padding-left: 1.25rem;
   background-color: #fff;
   height: 175px;
 }
@@ -1639,15 +1637,10 @@ progress {
     height: auto;
   }
 }
-@media screen and (max-width: 500px) {
-  .ayuda__cards-section--container .cards-section__row .cards-section__card {
-    padding-left: 20px;
-  }
-}
 .ayuda__cards-section--container .cards-section__row .cards-section__card-title {
   font-size: 1.5rem;
   font-weight: 900;
-  padding: 10px 0;
+  padding: 0.5rem 0;
 }
 @media screen and (max-width: 1200px) {
   .ayuda__cards-section--container .cards-section__row .cards-section__card-title {
@@ -1660,7 +1653,7 @@ progress {
   }
 }
 .ayuda__cards-section--container .cards-section__second-row {
-  padding-top: 25px;
+  padding-top: 1.5rem;
 }
 
 /*===Estilos generales===*/

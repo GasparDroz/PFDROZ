@@ -10,15 +10,15 @@
     .ayuda__banner-section {
         @include flex-center;
         flex-direction: column;
-        gap: 25px;
-        padding-left: 80px;
+        gap: $space-lg;
+        padding-left: $space-4xl;
         @include mobile {
-            padding: 25px 0;            
-            padding-left: 20px;
+            padding: $space-lg 0;            
+            padding-left: $space-md;
         }
         &__span {
             text-align: center;
-            padding: 10px;
+            padding: $space-xs;
             font-weight: $font-bold;
             border-radius: 20px;
             background-color: $secondary-color;
@@ -50,35 +50,35 @@
 
 /*Segunda seccion*/
 .ayuda__contact-section {
-    padding: 50px 0;
+    padding: $space-2xl 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: $space-md;
     @include tablet-small {
-        padding: 50px 20px;
+        padding: $space-2xl $space-md;
     }
     .contact-section__title {
         font-weight: $font-black;
         font-size: $font-size-xl;
         text-align: center;
-        margin-right: 0.5rem;
+        margin-right: $space-xxs;
     }
     .contact-section__description {
         font-size: $font-size-sm;
         max-width: 750px;
         text-align: center;
-        margin-right: 0.5rem;
+        margin-right: $space-xxs;
     }
     .contact-section__form {
         width: 100%;
         max-width: 750px;
         display: grid;
-        gap: 10px;
+        gap: $space-xs;
         &-input {
             width: 95%;
-            padding: 0.5rem;
+            padding: $space-xxs;
             border: 1px solid $secondary-color;
             transition: border 0.2s;
             &:focus {
@@ -87,7 +87,7 @@
             }
         }
         &-label {
-            margin-top: 15px;
+            margin-top: $space-sm;
             font-size: $font-size-xs;
             font-weight: $font-bold;
         }
@@ -106,7 +106,7 @@
                 box-shadow: none;
                 background-image: none;
                 width: 100%;
-                padding: 0 .5em;
+                padding: $space-xxs;
                 cursor: pointer;
                 background-color: $complementary-color;
                 &::-ms-expand{
@@ -136,7 +136,7 @@
             @include button;
             width: 200px;
             justify-self: center;
-            margin-top: 1rem;
+            margin-top: $space-sm;
             &:hover {
                 background-color: $complementary-color;
                 color: $primary-color;
@@ -151,14 +151,14 @@
     background-color: $secondary-color-lighter;
     .preguntas-section {
         max-width: 700px;
-        padding: 50px 0;
+        padding: $space-2xl 0;
         @include tablet-small {
             max-width: 500px;
         }
         &__title {
             font-weight: $font-black;
             font-size: $font-size-xl;
-            padding-bottom: 25px;
+            padding-bottom: $space-lg;
         }
     }
 }
@@ -168,25 +168,22 @@
 .ayuda__cards-section--container{
     background-color: $secondary-color-lighter;
     .cards-section {
-        padding: 50px;
+        padding: $space-2xl;
         &__row {
-            gap: 25px;
+            gap: $space-lg;
             .cards-section__card {
                 overflow: hidden;
-                padding: 15px;
-                padding-left: 20px;
-                background-color: #fff;
+                padding: $space-sm;
+                padding-left: $space-md;
+                background-color: $primary-color;
                 height: 175px;
                 @include tablet {
                     height: auto;
                 }
-                @include mobile {
-                    padding-left: 20px;
-                }
                 &-title {
                     font-size: $font-size-md;
                     font-weight: $font-black;
-                    padding: 10px 0;
+                    padding: $space-xxs 0;
                     @media screen and (max-width:1200px) {
                         padding: 0;
                     }
@@ -197,7 +194,7 @@
             }
         } 
         &__second-row {
-            padding-top: 25px;
+            padding-top: $space-lg;
         }  
     }
 }
