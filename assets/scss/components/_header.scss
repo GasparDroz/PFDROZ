@@ -1,0 +1,51 @@
+/*HEADER*/
+.navbar {
+    height: 90px;
+    padding-left: 45px;
+    padding-right: 40px;
+    background-color: $secondary-color !important;/*Aca use important porque era la unica forma en que me dejaba cambiar el color*/
+    @include mobile {
+        height: 80px;
+        padding: 0;
+        margin: 0;
+    }
+    &-brand {
+        @include mobile {
+            font-size: $font-size-xs;
+        }
+        .logo {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+            @include mobile {
+                margin-right: 5px;
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+    &-toggler-icon {
+        @include mobile {
+            width: 20px;
+        }
+    }
+    &-nav {
+        .nav-item {
+            padding-left:40px;
+            text-align: center;
+            font-weight: 700;
+            overflow: hidden;
+            @include tablet {
+                padding-left: 20px;
+            }
+            .nav-link {
+                &:hover {
+                    overflow: hidden;
+                    color: $complementary-color;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

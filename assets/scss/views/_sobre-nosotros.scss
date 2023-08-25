@@ -1,0 +1,138 @@
+/*=== PÄGINA SOBRE NOSOTROS ===*/
+/*Primer seccion*/
+.sobre-nosotros__banner-section--container {
+    background-image:linear-gradient(to top, rgba(124, 124, 126, 0.6), rgba(27, 27, 27, 0.8)), url(../img/banner-sobre-nosotros.jpg);
+    @include banner-container__styles;
+    display: flex;
+    .sobre-nosotros__banner-section {
+        @include banner-styles;
+        &__title {
+            @include banner-title__styles;
+        }
+        &__description {
+            font-weight: $font-bold;
+            font-size: $font-size-md;
+            max-width: 700px;
+            @include mobile {
+                font-size: $font-size-sm;
+            }
+        }
+        &__scroll-animation {
+            @include scroll-animation; 
+        }
+    }
+}
+
+
+//Estas clases se usan en las siguientes dos scciones para no repetir codigo
+%sobre-nosotros__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 70px 80px;
+    text-align: center;
+    @include mobile {
+        padding: 70px 15px;
+    }
+}
+%sobre-nosotros__cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    @include tablet {
+        flex-wrap: wrap;
+    }
+}
+%sobre-nosotros__card {
+    flex-direction: row;
+    @include card;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    text-align: start;
+    border: 1px solid $secondary-color;
+    transition: 
+        transform 0.3s;
+    @include mobile {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }    
+}
+
+
+/*Segunda seccion*/
+.beneficios-section{
+    @extend %sobre-nosotros__section;
+    &__title {
+        font-size: $font-size-2xl;
+        font-weight: $font-black;
+    }
+    &__description {
+        font-size: $font-size-md;
+        font-weight: $font-bold;
+        padding-bottom: 20px;
+    }
+    .beneficios-section__beneficios--container {
+        @extend %sobre-nosotros__cards-container;
+        .beneficios-section__beneficio {
+            @extend %sobre-nosotros__card;
+            &:hover {
+                transform: scale(0.96);
+            }
+            &__icon--container {
+                display: flex;
+                justify-content: start;
+                .beneficios-section__beneficio-icon {
+                color: $complementary-color;
+                }
+            }
+            
+            &-title {
+                font-size: $font-size-lg;
+                font-weight: $font-black;
+            }
+            &-description {
+                font-size: $font-size-sm;
+                font-weight: $font-bold;
+            }
+        }
+    }
+}
+
+
+/* Tercer seccin */
+.about-section {
+    @extend %sobre-nosotros__section;
+    &__title {
+        font-size: $font-size-2xl;
+        font-weight: $font-black;
+    }
+    &__description {
+        font-size: $font-size-md;
+        font-weight: $font-bold;
+        padding-bottom: 20px;
+    }
+    .about-section__cards--container {
+        @extend %sobre-nosotros__cards-container;
+        .about-section__card {
+            @extend %sobre-nosotros__card;
+            &:hover {
+                transform: scale(0.96);
+            }
+            &-title {
+                font-size: $font-size-md;
+                font-weight: $font-black;
+            }
+            &-description {
+                font-size: $font-size-sm;
+                font-weight: $font-bold;
+            }
+        }
+    }
+}

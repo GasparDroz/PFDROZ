@@ -1,0 +1,89 @@
+/*===PÁGINA INICIO===*/
+/*Primer seccion*/
+.inicio__banner-section--container {
+    background-image:linear-gradient(to top, rgba(116, 116, 117, 0.5), rgba(8, 8, 8, 0.8)), url(../img/banner-inicio.webp);
+    @include banner-container__styles;
+    .inicio__banner-section {
+        @include banner-styles;
+        &__title {
+            @include banner-title__styles;
+        }
+        &__description {
+            font-weight: $font-bold;
+            font-size: $font-size-md;
+            max-width: 50ch;
+            @include mobile {
+                font-size: $font-size-sm;
+            }
+        }
+        &__button {
+            @include button;
+        }
+        &__scroll-animation {
+            @include scroll-animation; 
+        }
+    }
+}
+
+/*Segunda seccion*/
+.inicio__cards-section {
+    padding: 50px;
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 50px;
+    @include mobile {
+        padding: 50px 15px;
+    }
+    &__card {
+        background-color: white;
+        box-shadow: 0px 1px 30px 0px $secondary-color;
+        width: 260px;
+        margin: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        &:hover {   
+            cursor: pointer;
+        }
+        %inicio__card-img {
+            height: 170px;
+            margin-bottom: 15px;
+            background-size: cover;
+        }
+        &-one--img {
+            @extend %inicio__card-img;
+            background-image: url("../img/inicio1.webp")
+        }
+        &-two--img {
+            @extend %inicio__card-img;
+            background-image: url("../img/inicio2.webp")
+        }
+        &-three--img {
+            @extend %inicio__card-img;
+            background-image: url("../img/inicio3.webp")
+        }
+        &-four--img {
+            @extend %inicio__card-img;
+            background-image: url("../img/inicio4.webp")
+        }
+        &-title {
+            color: $secondary-color;
+            font-weight: $font-black;
+            font-size: $font-size-md;
+            padding: 10px;
+        }
+        &-description {
+            padding: 10px;
+        }
+        &-button {
+            @include button;
+            background-color: $complementary-color;
+            margin: auto;
+        &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+        }
+    }
+}

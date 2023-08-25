@@ -1,0 +1,6 @@
+//Funcion para aplicar color de texto blanco a las siguientes clases:
+@each $color in (nav-link, footer__box__logo a, footer__box--title, footer__social-list__icon, footer__copy, events-section__event-text, ayuda__banner-section, ayuda__banner-section__button,  contact-section__form__select, contact-section__form-button){
+    .#{$color}{
+        color: $primary-color;
+    }
+}
