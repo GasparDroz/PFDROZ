@@ -31,7 +31,7 @@
 <body>
     <!-- Comienzo Header -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark" role="navigation">
             <div class="container">
                 <a class="navbar-brand" href="../index.html" tabindex="1">
                     <img src="../assets/img/logo.svg" alt="GlobalPassTickets logo" class="logo d-inline-block align-text-center">
@@ -154,17 +154,17 @@
                     Motivo de la consulta:
                 </label>
                 <div class="contact-section__form__select-container">
-                    <select id="name" name="name" placeholder="Ingrese su Correo electrónico" required tabindex="11" class="contact-section__form__input contact-section__form__select">
-                        <option selected disabled>
+                    <select id="name" name="name" placeholder="Ingrese su Correo electrónico" required tabindex="11" class="contact-section__form__input contact-section__form__select" role="select">
+                        <option selected disabled role="option">
                             Seleccione su motivo
                         </option>
-                        <option value="">
+                        <option value="" role="option">
                             Consulta sobre Eventos
                         </option>
-                        <option value="">
+                        <option value="" role="option">
                             Problema con la Compra de Entradas
                         </option>
-                        <option value="">
+                        <option value="" role="option">
                             Asistencia Técnica y Plataforma
                         </option>
                     </select>
@@ -178,7 +178,7 @@
                 </label>
                 <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Introduzca el motivo de su consulta" required class="contact-section__form-input contact-section__form-textarea" tabindex="12"></textarea>
 
-                <button type="submit" class="contact-section__form-button" tabindex="13">
+                <button type="submit" class="contact-section__form-button" tabindex="13" aria-label="Enviar">
                     Enviar
                 </button>
             </form>
@@ -366,7 +366,7 @@
         </div>
     </footer>
     <!-- Fin Footer -->
-    
+
     <!-- Linkeo arhivo js de la libreria de animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
