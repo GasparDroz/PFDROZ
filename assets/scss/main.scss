@@ -12,3 +12,14 @@
 @import './views/puntos-de-venta';
 @import './views/sobre-nosotros';
 @import './views/ayuda';
+
+
+/*===Estilos generales===*/
+body{
+    scroll-behavior: smooth;/*Hace que el scroll al tocar un boton que lleva a una seccion sea mas suave*/
+    font-family: 'Roboto', sans-serif;
+}
+/*Ayuda a la accesibilidad, al navegar con el tab por los items de la pagina que tienen el atributo tabindex se les añade un borde de otro color*/
+[tabindex]:focus-visible {
+    outline: 5px solid rgb(75, 126, 236);
+}
