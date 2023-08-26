@@ -1657,16 +1657,6 @@ progress {
 }
 
 /* Errors*/
-* {
-  margin: 0px auto;
-  padding: 0px;
-  text-align: center;
-}
-
-body {
-  background-color: #D4D9ED;
-}
-
 .cont_principal {
   position: absolute;
   width: 100%;
@@ -1691,8 +1681,8 @@ body {
 }
 .cont_principal .cont_error p {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 1.5rem;
   letter-spacing: 5px;
   color: #9294AE;
   position: relative;
@@ -1702,7 +1692,7 @@ body {
   -webkit-transition: all 0.5s;
   -webkit-transition-delay: 0.5s;
 }
-.cont_principal .cont_error .cont_aura_1 {
+.cont_principal .cont_aura_1 {
   position: absolute;
   width: 300px;
   height: 120%;
@@ -1713,7 +1703,7 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.cont_principal .cont_error .cont_aura_2 {
+.cont_principal .cont_aura_2 {
   position: absolute;
   width: 100%;
   height: 300px;
@@ -1725,16 +1715,20 @@ body {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-.cont_principal .cont_error_active .cont_error h1 {
+
+.cont_error_active .cont_error h1 {
   left: 0%;
 }
-.cont_principal .cont_error_active .cont_error p {
+
+.cont_error_active .cont_error p {
   left: 0%;
 }
-.cont_principal .cont_error_active .cont_aura_2 {
+
+.cont_error_active .cont_aura_2 {
   transform: rotate(-20deg);
 }
-.cont_principal .cont_error_active .cont_aura_1 {
+
+.cont_error_active .cont_aura_1 {
   transform: rotate(20deg);
   right: -170px;
 }
