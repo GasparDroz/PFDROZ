@@ -2,10 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Gaspar Droz">
+    <title>Pagina no encontrada</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-    
+    <div class="cont_principal">
+        <div class="cont_error">
+            <h1>
+                Oops
+            </h1>  
+            <p>
+                Parece que la pagina que estabas buscando no esta disponible
+            </p>
+        </div>
+        <div class="cont_aura_1"></div>
+        <div class="cont_aura_2"></div>
+    </div>
+
+    <script>
+        window.onload = function () {
+                document.querySelector('.cont_principal').className = "cont_principal cont_error_active";
+
+            }
+    </script>
 </body>
 </html>
