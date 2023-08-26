@@ -24,11 +24,11 @@
 
 /*Estilos por defecto para los botones*/
 @mixin button {
-    border-radius: 5px;
+    border-radius: 10px - 5px;
     text-decoration: none;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: $font-size-xs;
+    font-weight: $font-bold;
     padding: $space-sm;
     max-width: 250px;
     color: $primary-color;
@@ -41,19 +41,27 @@
         color: $secondary-color;
     }
 }
-
+$full-height: true;
 /*Estilos por defecto para los containers de la seccion del banner de cada pagina(primer seccion)*/
 @mixin banner-container__styles {
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 90px);
+    @if $full-height == true {
+        height: calc(100vh - 90px);
+    } @else {
+        height: 50vh;
+    }
     color: $primary-color;
     position: relative;
 }
 
 /*Estilos por defecto para la seccion del banner de cada pagina(primer seccion)*/
 @mixin banner-styles {
-    height: 100%;
+    @if $full-height == true {
+        height: 100%;
+    } @else {
+        height: 100vh - 50vh;
+    }
     position: relative;
     @include flex-center;
     flex-direction: column;
@@ -93,8 +101,8 @@
     overflow: hidden;
     span { 
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 60px - 30px;
+        height: 60px - 30px;
         border-bottom: 5px solid $primary-color;
         border-right: 5px solid $primary-color;
         transform: rotate(45deg);

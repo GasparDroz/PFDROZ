@@ -37,10 +37,9 @@
     }
 }
 %sobre-nosotros__cards-container {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
     gap: $space-xl;
-    justify-content: center;
     @include tablet {
         flex-wrap: wrap;
     }
@@ -49,9 +48,8 @@
     flex-direction: row;
     @include card;
     max-width: 400px;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
     gap: $space-xxs;
     padding: $space-xxs $space-md;
     text-align: start;

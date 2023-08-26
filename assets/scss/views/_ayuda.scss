@@ -1,11 +1,20 @@
 /*PÁGINA AYUDA*/
 /*Primer seccion*/
+$full-height: false;
 .ayuda__banner-section--container {
     background-color: $complementary-color;
-    height: 50vh;
+    @if $full-height == true{
+        height: 65vh;
+    } @else {
+        height: 50vh;
+    }
     display: flex;
     @include mobile {
-        height: 65vh;
+        @if $full-height == false{
+            height: 65vh;
+        } @else {
+            height: 50vh;
+        }
     }
     .ayuda__banner-section {
         @include flex-center;

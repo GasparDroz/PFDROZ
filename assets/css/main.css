@@ -1314,9 +1314,9 @@ progress {
 
 .about-section .about-section__cards--container, .beneficios-section .beneficios-section__beneficios--container {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 2rem;
-  justify-content: center;
 }
 @media screen and (max-width: 1000px) {
   .about-section .about-section__cards--container, .beneficios-section .beneficios-section__beneficios--container {
@@ -1338,8 +1338,8 @@ progress {
   background-size: cover;
   max-width: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem 1.25rem;
   text-align: start;
