@@ -1,8 +1,8 @@
 /*HEADER*/
 .navbar {
     height: 90px;
-    padding-left: 45px;
-    padding-right: 40px;
+    padding-left: $space-xl + 0.75rem;
+    padding-right: $space-xl + 0.5rem;
     background-color: $secondary-color !important;/*Aca use important porque era la unica forma en que me dejaba cambiar el color*/
     @include mobile {
         height: 80px;
@@ -17,9 +17,9 @@
             position: relative;
             height: 50px;
             width: 50px;
-            margin-right: 20px;
+            margin-right: $space-md;
             @include mobile {
-                margin-right: 5px;
+                margin-right: $space-xxs;
                 height: 35px;
                 width: 35px;
             }
@@ -32,12 +32,12 @@
     }
     &-nav {
         .nav-item {
-            padding-left:40px;
+            padding-left: $space-xl + 0.5rem;
             text-align: center;
-            font-weight: 700;
+            font-weight: $font-bold;
             overflow: hidden;
             @include tablet {
-                padding-left: 20px;
+                padding-left: $space-md;
             }
             .nav-link {
                 &:hover {

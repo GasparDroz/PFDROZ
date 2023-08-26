@@ -604,8 +604,8 @@ progress {
 /*HEADER*/
 .navbar {
   height: 90px;
-  padding-left: 45px;
-  padding-right: 40px;
+  padding-left: 2.75rem;
+  padding-right: 2.5rem;
   background-color: #222 !important; /*Aca use important porque era la unica forma en que me dejaba cambiar el color*/
 }
 @media screen and (max-width: 500px) {
@@ -624,11 +624,11 @@ progress {
   position: relative;
   height: 50px;
   width: 50px;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 @media screen and (max-width: 500px) {
   .navbar-brand .logo {
-    margin-right: 5px;
+    margin-right: 0.5rem;
     height: 35px;
     width: 35px;
   }
@@ -639,14 +639,14 @@ progress {
   }
 }
 .navbar-nav .nav-item {
-  padding-left: 40px;
+  padding-left: 2.5rem;
   text-align: center;
   font-weight: 700;
   overflow: hidden;
 }
 @media screen and (max-width: 1000px) {
   .navbar-nav .nav-item {
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
 }
 .navbar-nav .nav-item .nav-link:hover {
@@ -659,13 +659,13 @@ progress {
 .footer {
   background-color: #222;
   max-height: 300px;
-  padding-top: 30px;
+  padding-top: 2rem;
 }
 .footer__group--one {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 65px 0 80px;
+  margin: 0 4rem 0 5rem;
 }
 @media screen and (max-width: 500px) {
   .footer__group--one {
@@ -675,7 +675,7 @@ progress {
   }
 }
 .footer__group--one .footer__box__logo {
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 .footer__group--one .footer__box__logo a {
   text-decoration: none;
@@ -684,7 +684,7 @@ progress {
   position: relative;
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 @media screen and (max-width: 500px) {
   .footer__group--one .footer__box__logo a img {
@@ -697,14 +697,14 @@ progress {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 5px;
-  margin-right: 25px;
+  margin-right: 1.5rem;
 }
 .footer__group--one .footer__social-list {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-bottom: 15px;
-  margin-right: 15px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 .footer__group--one .footer__social-list__icon {
   display: inline-block;
@@ -720,7 +720,7 @@ progress {
   border-top: 1px solid #fff;
 }
 .footer__group--two .footer__copy {
-  padding: 15px 0;
+  padding: 1rem 0;
   font-size: 1rem;
 }
 
