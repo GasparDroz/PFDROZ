@@ -29,9 +29,9 @@ $full-height: false;
             text-align: center;
             padding: $space-xs;
             font-weight: $font-bold;
-            border-radius: 20px;
+            border-radius: 10px * 2;
             background-color: $secondary-color;
-            max-width: 250px;
+            max-width: 1000px - 750px;
             @include mobile {
                 max-width: 190px;
             }
@@ -76,17 +76,17 @@ $full-height: false;
     }
     .contact-section__description {
         font-size: $font-size-sm;
-        max-width: 750px;
+        max-width: 1000px - 250px;
         text-align: center;
         margin-right: $space-xxs;
     }
     .contact-section__form {
         width: 100%;
-        max-width: 750px;
+        max-width: 1000px - 250px;
         display: grid;
         gap: $space-xs;
         &-input {
-            width: 95%;
+            width: 100% - 5%;
             padding: $space-xxs;
             border: 1px solid $secondary-color;
             transition: border 0.2s;
@@ -103,7 +103,7 @@ $full-height: false;
         &__select-container {
             position: relative;
             display: flex;
-            max-width: 700px;
+            max-width: 1000px - 300px;
             overflow: hidden;
             border-radius: 0.25rem;
             min-width: 200px;
@@ -143,7 +143,7 @@ $full-height: false;
         }
         &-button {
             @include button;
-            width: 200px;
+            width: 100px * 2;
             justify-self: center;
             margin-top: $space-sm;
             &:hover {
@@ -159,10 +159,10 @@ $full-height: false;
 .ayuda__preguntas-section--container {
     background-color: $secondary-color-lighter;
     .preguntas-section {
-        max-width: 700px;
+        max-width: 1000px - 300px;
         padding: $space-2xl 0;
         @include tablet-small {
-            max-width: 500px;
+            max-width: 1000px - 500px;
         }
         &__title {
             font-weight: $font-black;
